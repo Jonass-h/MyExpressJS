@@ -2,7 +2,11 @@ const express=require("express");
 const app = express();
 
 app.get('/', (req,res)=>{
-    res.send("hello express server !! ");
+    let client={
+       name:"younes",
+       age:22
+    };
+    res.send(client);
 })
 
 app.listen(3000);
